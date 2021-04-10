@@ -1,0 +1,14 @@
+<% for(var i = 0;i<list.length;i++){%>
+
+<tr class="tr">
+    <td><%=i+1%></td>
+    <td><%=list[i].todo%></td>
+    <td><%=list[i].time%></td>
+     <td>
+        <a class ="del delete" data-id=<%=list[i]._id %>>
+        Delete
+        </a>
+    </td>
+</tr>
+
+<% } %>

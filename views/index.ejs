@@ -1,0 +1,33 @@
+
+
+<!--Including header-->
+<%- include('include/_header') %>
+
+ <!--main site-->
+ <div class="container">
+    <div class="box">
+        <form method="POST" class="form" id="add_list"> 
+            <div class="input">
+                <input type="text" placeholder="your todo thing" name="todo" id="todo" class="inp">
+                <input type="text" placeholder="Timing" name="time" id="time" class="time">
+                <button type="submit" class="btn">Add New</button>
+            </div>
+            
+            <table class="table">
+                <thead class="thead">
+                    <tr>
+                        <th>ID</th>
+                        <th>TODo Work</th>
+                        <th>Timing</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                   <%- include('include/_show') %>
+                </tbody>
+            </table>
+        </form>
+    </div>
+ </div>
+
+ <%- include('include/_footer') %>
